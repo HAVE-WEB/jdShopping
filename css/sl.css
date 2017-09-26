@@ -951,3 +951,238 @@ img{
 em, i {
     font-style: normal;
 }
+.news{
+    overflow: hidden;
+    padding:0 15px;
+    height: 154px;
+}
+.news .mod_tab_head{
+    padding:8px 0 4px;
+    border-bottom:1px solid #e6e6e6;
+    position: relative;
+    line-height: 14px;
+}
+.news .mod_tab_head_item{
+    color: #333;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-right: 1px solid #dfe0e1;
+}
+.news .news_first{
+    padding-left:0px;
+}
+.news .news_last{
+    padding-right:0;
+    border-right:0;
+}
+.new_tab_active{
+    height: 2px;
+    width: 28px;
+    background: #db192b;
+    position: absolute;
+    bottom:-1px;/*;//属性定义了定位元素下边边距边界与其包含块下边界之间的编译。没有定义bottom，left，top，right，绝对定位的元素就在原来元素在正常文档流的位置，设置的话，就相对于包含它的父类元素进行定位
+                    如果同时定义top，bottom，bottom忽略。left，right同时定义，right忽略*/
+    left: -2px;
+    -webkit-transition: transform, -web-transform .3s, .3s;
+    -moz-transition: transform, -web-transform .3s, .3s;
+    -ms-transition: transform, -web-transform .3s, .3s;
+    -o-transition: transform, -web-transform .3s, .3s;
+    transition: transform, -web-transform .3s, .3s;
+
+
+}
+.news_more{
+    position: absolute;
+    right: 0px;
+}
+.mod_tab_content{
+    padding: 12px 0px;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+    color: #666;
+}
+.news_item{
+    line-height: 24px;
+    max-width:160px;
+    overflow: hidden;
+    white-space:nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.service{
+    overflow: hidden;
+    position: relative;
+    height: 210px;
+}
+.service_entry{
+    overflow: hidden;
+    width: 190px;
+}
+.service_list{
+    margin-left: -1px;
+    height: 210px;
+    width:192px;
+    overflow: hidden;
+}
+.service_item{
+    float: left;
+    position: relative;
+    width: 47px;
+    border-left: 1px solid #e7e7e7;
+    height: 69px;
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+    overflow: hidden;
+}
+.service_lk{
+    padding-top:14px;/**/
+    height: 55px;/*所说的高度就是这个元素的子元素的总共高度（包括子元素的margin，pading，子元素的子元素的总高度）*/
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out
+}
+.service_ico{
+    width: 24px;
+    height:24px;
+    background-image:url("../images/service.png");
+    -webkit-background-size: 156px 148px;
+    background-size: 156px 148px;
+    background-repeat:no-repeat;
+    margin: 0 auto;
+}
+/*.service_ico_jiayou, .service_ico_qyg {*/
+    /*background-image: url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@1x.png);*/
+    /*background-size: 156px 148px;*/
+    /*background-repeat: no-repeat;*/
+    /*width: 24px;*/
+    /*height: 24px;*/
+/*}*/
+.service_ico_huafei{
+    background-position: 0 -88px;
+}
+.service_ico_jipiao{
+    background-position: 0 -44px;
+}
+.service_ico_jiudian{
+    background-position: -44px -88px;
+}
+.service_ico_youxi{
+    background-position: -88px 0;
+}
+.service_ico_jiayou{
+    background-position: 0 0;
+}
+.service_ico_qyg {
+    background-position: -88px -44px;
+}
+.service_ico, .service_lk, .service_txt {
+    display: block;
+}
+.service_txt{
+    height: 22px;
+    line-height:22px;
+    border-top:2px solid #fff;
+}
+.service_corner{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 13px;
+    height: 16px;
+    line-height: 12px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background: #e01121;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+/*.service_expend .service_frame .service_corner{*/
+
+/*}*/
+.service_expend .service_frame .service_corner{
+    transform: translate3d(0,38px,0);
+    right: 2px;
+    top: 4px;
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.service_expend .service_frame .service_lk{
+    margin-top: 0px;
+    -webkit-transform: translate3d(0,-38px,0);
+    -moz-transform: translate3d(0,-38px,0);
+    -ms-transform: translate3d(0,-38px,0);
+    -o-transform: translate3d(0,-38px,0);
+    transform: translate3d(0,-38px,0);
+}
+.service_expend .service_frame_on .service_txt{
+    color: #e01121;
+    border-top-color: #e01121;
+}
+.service_expend .service_frame .service_corner_ico, .service_expend .service_frame .service_corner_txt{
+    display: none;
+}
+.service_pop{
+    position: absolute;
+    top: 210px;
+    left: 0px;
+    width: 190px;
+    height: 185px;
+    background-color: #fff;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.service_pop_close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+.service_pop_item{
+    height: 185px;
+}
+.loading .mod_loading{
+    background-image: url('../images/loading.gif');
+}
+.loading .mod_lazyload .mod_loading{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+#squares-jipiao{
+    width: 190px;
+    height: 186px;
+    color: #666;
+    font-family: Arial;
+}
+#squares-jipiao .squares-tab{
+    padding:15px 5px 0;
+    position: static;
+    width:auto;
+    height:auto;
+    overflow: hidden;
+}
+#squares-jipiao .squares-tab li.current{
+    background: url("../images/iframe-san-new.png") center 0 no-repeat;
+}
+#squares-jipiao .squares-tab li{
+
+}
+
+
