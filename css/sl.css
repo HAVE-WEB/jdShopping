@@ -1140,11 +1140,11 @@ body {
     width: 190px;
     height: 185px;
     background-color: #fff;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 .service_pop_close{
     position: absolute;
@@ -1165,6 +1165,13 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+.service_expend .service_pop{
+    top: 210px;
+    transform: translate3d(0,-185px,0);
+}
+.service_expend .service_pop{
+    top: 24px;
+}
 #squares-jipiao{
     width: 190px;
     height: 186px;
@@ -1181,8 +1188,298 @@ body {
 #squares-jipiao .squares-tab li.current{
     background: url("../images/iframe-san-new.png") center 0 no-repeat;
 }
+#squares-jipiao .squares-tab li.last{
+    margin-right:0;
+}
 #squares-jipiao .squares-tab li{
 
 }
+.my-jd{
+    position: relative;
+}
 
+.show-layer .myJD-dropDown{
+    display: block;
+}
+.myJD-dropDown{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left:0;
+    background-color: #fff;
+    border:1px solid #AEAEAE;
+    margin-left: -1px;
+}
+.show-layer
 
+.frame-right{
+    height: 30px;
+}
+.frame-list{
+    /*overflow: hidden;*/
+    height: 30px;
+}
+.frame-lk{
+    margin: 0px 2px
+}
+.frame-item{
+    float: left;
+    /*margin-right: 8px;*/
+    height:30px;
+    line-height:30px;
+    overflow:visible;
+}
+.layer-item{
+    float: left;
+    width: 60px;
+    height:auto;
+    padding: 10px;
+
+}
+.layer-list{
+    width: 200px;
+
+}
+.layer-right{
+    padding-left:20px;
+}
+.layer-left{
+}
+.layer-item-list{
+
+}
+.layer-item-list-item{
+    height:30px;
+}
+/*鼠标悬浮添加样式*/
+.show-layer{
+    background-color: #fff;
+    border-right: 1px solid #AEAEAE;
+    border-left: 1px solid #AEAEAE;
+}
+.clear-border{
+    display: none;
+}
+.show-layer .clear-border{
+    display: block;
+    top: -2px;
+    width: 74px;
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+}
+.space{
+    float:left;
+    width: 1px;
+    height: 10px;
+    margin:10px 5px 0;
+    background-color: #ccc;
+    overflow: hidden;
+
+}
+.second-kil-layer{
+    width:100%;
+    height: 305px;
+    margin:10px 0 20px;
+}
+.second-kill{
+    width: 1190px;
+    height: 305px;
+    margin:0 auto;
+}
+.second-head{
+    height: 55px;
+    background: url("../images/seckill_hd.png") no-repeat ;
+    color: #FFFFFF;
+    padding:0 20px 0 30px;
+    position: relative;
+}
+.second-head-left{
+    float: left;
+}
+.second-head-right{
+    float: right;
+}
+.second-head-left .second-head-left-des{
+    background-image: url('../images/sprite_index@1x.png');
+    background-position: -190px -48px;
+    background-size: 218px 188px;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+
+}
+.second-head-left .second-head-left-icon{
+    margin-top: 8px;
+    margin-right: 8px;
+    background-image: url(//misc.360buyimg.com/mtd/pc/index/2.0.0/home/images/sprite_index@1x.png);
+    background-position: 0 -40px;
+    -moz-background-size: 218px 188px;
+    background-size: 218px 188px;
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 40px;
+    float: left;
+
+}
+.second-head-left-des{
+    position: absolute;
+    left: -4px;
+    top: -4px;
+
+}
+.second-head-left-txt{
+    float: left;
+    font-size: 20px;
+    height: 48px;
+    line-height: 48px;
+    font-family:fzzhengheis-el-gbregular;
+    margin-top: 4px;
+}
+.second-head-left-lk{
+    height: 55px;
+    line-height: 55px;
+    margin-left:10px;
+    color: #fff;
+}
+.second-head-left-lk:hover {
+    color: #fff;
+}
+.second-head-right-current{
+    float: left;
+    font-size: 16px;
+}
+.vertical-center{
+    float: left;
+    font-size: 16px;
+    height: 55px;
+    line-height:55px;
+}
+.head-time{
+    float: left;
+    margin: 10px 5px;
+}
+.time-hour{
+    float: left;
+    background: #440106;
+    color: red;
+    height: 40px;
+    line-height: 40px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0px 5px;
+}
+.time-num{
+    font-size: 20px;
+}
+.time-semicolon{
+    float: left;
+    height: 30px;
+    width: 16px;
+    padding-top:10px;
+}
+.time-semicolon .semicolon{
+    width: 6px;
+    height: 6px;
+    background: #440106;
+    margin-top: 4px;
+    margin-left: 5px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.second-content{
+    height: 226px;
+    width: 1190px;
+    overflow: hidden;
+    padding:12px 0px;
+    background-color: #FFFFFF;
+}
+.second-wrapper{
+    float: left;
+    width: 1000px;
+    overflow: hidden;
+    position:relative;
+}
+.list-wrapper{
+    float: left;
+    overflow: hidden;
+}
+.list-wrapper-item{
+    float: left;
+    width: 170px;
+    height: 226px;
+    padding: 0px 14px 0px 15px;
+    border-right:1px solid #AEAEAE;
+
+}
+.second-content .special{
+    float: right;
+    width: 190px;
+}
+
+.list-wrapper-pic{
+    position: relative;
+    text-align: center;
+}
+.list-wrapper-img{
+    width: 130px;
+    height: 130px;
+    margin:17px 0px;
+}
+.item-price{
+    height: 25px;
+    padding: 3px 0;
+}
+.item-price-new{
+    color: red;
+    font-size: 18px;
+    margin-right: 10px;
+
+}
+.item-price-new img{
+    width: 12px;
+    height: 12px;
+}
+.item-price-old img{
+    width: 12px;
+    height: 12px;
+}
+.item-price-old{
+    color: #AEAEAE;
+    font-size: 12px;
+}
+.list-wrapper-pic-lk{
+    display: block;
+}
+.sk-item-shadow{
+    width: 170px;/*当前盒子的宽度*/
+    height: 20px;/*当前盒子的高度*/
+    /*background-color: red;*/
+    position: absolute;/*当前盒子以包含它的父元素进行定位*/
+    left: 0px;/*当前盒子的左边框到父元素左边框的距离是0px*/
+    top: 130px;/*当前盒子顶部边框到父元素顶部边框的距离是130px*/
+    background-image: url("../images/sprite_index@1x.png");
+    background-position: 0 0;/*以左上角为坐标轴，指定图片的左上角的点在当前盒子的左上角的点的位置，（图片在盒子的下面）*/
+    background-repeat:no-repeat;/*如何在当前盒子平铺背景图片*/
+    /*-webkit-background-size: 218px 188px;!*如果指定图片的高度和宽度，那么图片从原来的高度和宽度压缩到指定的高度和宽度。      如果背景图片的高度和宽度 小于 当前盒子的高度和宽度，需要考虑平铺的可能。如果背景图片的高度和*/
+                                            /*宽度大于当前盒子的高度和宽度。当前盒子的背景图就是背景图片的一部分。*!*/
+    /*background-size: 218px 188px;*/
+}
+.sk-item-tag{
+    position: absolute;/*默认值是static，相对于static定位以外的第一个父元素进行定位（意思是从当前元素往上找祖先元素，找到position的值不是static的元素，就已该元素进行绝对定位）*/
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 40px;
+    background-image: url('../images/sprite_index@1x.png');
+    background-position: -54px -40px;
+    background-repeat: no-repeat;
+}
+.tag-txt{
+    color: #FFFFFF;/*当前盒子里字体的颜色是白色*/
+    font-size: 12px;/*当前盒子的字体的大小*/
+    line-height:14px;/*1，normal1：默认，合理的行间距。2，number，如果是数字，数字会与当前的字体尺寸相称来设置行间距。3，length，设置固定的行间距。4，%，基于当前的字体尺寸的百分比来设置行间距。5，inherit
+                            应该从父元素继承line-height属性的值*/
+}
