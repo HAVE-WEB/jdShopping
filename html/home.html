@@ -5,7 +5,7 @@
     <link href="../css/font-awesome.css" rel="stylesheet">
     <script src="../js/jquery.min.js"></script>
     <style>
-        a{
+        a{/*定义a标签里子元素文本的颜色是#999999,如果子元素文本定义了自己的颜色，子元素的颜色就是自己class中的颜色，子元素没有定义，就继承父类的颜色值*/
             text-decoration: none;
             color: #999999;
         }
@@ -390,17 +390,18 @@
                 </div>
                 <div class="second-content">
                     <div class="second-wrapper">
-                        <ul class="list-wrapper">
-                            <li class="list-wrapper-item">
+                        <!--商品列表-->
+                        <ul class="list-wrapper" style="width: 4000px;transform: translateX(-1000px);transition-property: transform; transition-duration: .6s">
+                            <li class="list-wrapper-item sk-item-6">
                                 <div class="list-wrapper-pic">
                                     <!--标记-->
                                     <div class="sk-item-tag">
-                                            <span class="tag-txt">量贩装</span>
+                                        <span class="tag-txt">量贩装</span>
                                     </div>
                                     <!--图片和文字信息-->
                                     <a href="" class="list-wrapper-pic-lk">
                                         <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
-                                        <p>稻香村 稻香人家中秋月饼礼盒550g</p>
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒6</p>
                                     </a>
                                     <!--阴影盒子-->
                                     <span class="sk-item-shadow"></span>
@@ -416,20 +417,542 @@
                                     </span>
                                 </p>
                             </li>
-                            <li class="list-wrapper-item">
+                            <li class="list-wrapper-item sk-item-7">
                                 <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
                                     <a href="" class="list-wrapper-pic-lk">
                                         <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
-                                        <p>稻香村 稻香人家中秋月饼礼盒550g</p>
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒7</p>
                                     </a>
+                                    <!--阴影盒子-->
                                     <span class="sk-item-shadow"></span>
                                 </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-8">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒8</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-9">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒9</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-10">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒10</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-1">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                            <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒1</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-2">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒2</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-3">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒3</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-4">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒4</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-5">
+                            <div class="list-wrapper-pic">
+                                <!--标记-->
+                                <div class="sk-item-tag">
+                                    <span class="tag-txt">量贩装</span>
+                                </div>
+                                <!--图片和文字信息-->
+                                <a href="" class="list-wrapper-pic-lk">
+                                    <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                    <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒5</p>
+                                </a>
+                                <!--阴影盒子-->
+                                <span class="sk-item-shadow"></span>
+                            </div>
+                            <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                            </p>
+                        </li>
+                            <li class="list-wrapper-item sk-item-6">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒6</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-7">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒7</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-8">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒8</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-9">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒9</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-10">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒10</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-1">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒1</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-2">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒2</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-3">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒3</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-4">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒4</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
+                            </li>
+                            <li class="list-wrapper-item sk-item-5">
+                                <div class="list-wrapper-pic">
+                                    <!--标记-->
+                                    <div class="sk-item-tag">
+                                        <span class="tag-txt">量贩装</span>
+                                    </div>
+                                    <!--图片和文字信息-->
+                                    <a href="" class="list-wrapper-pic-lk">
+                                        <img src="../images/wrapper.jpg" alt="" class="list-wrapper-img">
+                                        <p class="sk-item-name">稻香村 稻香人家中秋月饼礼盒5</p>
+                                    </a>
+                                    <!--阴影盒子-->
+                                    <span class="sk-item-shadow"></span>
+                                </div>
+                                <p class="item-price">
+                                    <span class="item-price-new">
+                                        <img src="../images/money.png" alt="">
+                                        <span>1990</span>
+                                    </span>
+                                    <span class="item-price-old">
+                                        <img src="../images/money.png" alt="">
+                                        <del>2200</del>
+                                    </span>
+                                </p>
                             </li>
                         </ul>
+                        <!--列表控制按钮-->
+                        <div class="sk-controls" style="display: none;">
+                            <a href="javascript:void (0)" class="sk-controls-item sk-controls-prev"><i class="fa fa-angle-left"></i></a>
+                            <a href="javascript:void (0)" class="sk-controls-item sk-controls-next"><i class="fa fa-angle-right"></i></a>
+                        </div>
                     </div>
                     <div class="special">
-                        <img src="../images/right.jpg" alt="">
+                        <ul class="sk-special-list">
+                            <li class="sk-special-item active"><a href="" class="sk-special-lk"><img src="../images/sk-special-1.jpg" alt="" class="sk-special-img"></a>
+                            </li>
+                            <li class="sk-special-item"><a href="" class="sk-special-lk"><img src="../images/sk-special-2.jpg" alt="" class="sk-special-img"></a>
+                            </li>
+                        </ul>
+                        <!--切换圆点-->
+                        <ul class="sk-special-indlist">
+                            <li class="sk-special-inditem active"></li>
+                            <li class="sk-special-inditem"></li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!--发现好货，会买专辑，排行榜-->
+        <div class="fbt">
+            <div class="fbt-inner">
+                <div class="find-good">
+                    <div class="find-head box-hd">
+                        <span >发现好货</span>
+                        <a href="">发现品质生活<i class="box-sub"></i></a>
+                    </div>
+                    <div class="find-bd">
+                        <ul class="find-bd-list">
+                            <li class="find-bd-item find-item-1"><a href="" class="find-item-lk"><p class="find-item-name">vivo X9s 玫瑰金</p>
+                                <img src="../images/find-2.jpg" class="find-item-pic" alt=""></a></li>
+                            <li class="find-bd-item find-item-2"><a href="" class="find-item-lk"><p class="find-item-name">防水拉链连帽休闲夹克</p>
+                                <img src="../images/find-1.jpg" class="find-item-pic" alt=""></a></li>
+                            <li class="find-bd-item find-item-3"><a href="" class="find-item-lk"><p class="find-item-name">防水拉链连帽休闲夹克</p>
+                                <img src="../images/find-1.jpg" class="find-item-pic" alt=""></a></li>
+                            <li class="find-bd-item find-item-4"><a href="" class="find-item-lk"><p class="find-item-name">vivo X9s 玫瑰金</p>
+                                <img src="../images/find-2.jpg" class="find-item-pic" alt=""></a></li>
+                            <li class="find-bd-item find-item-5"><a href="" class="find-item-lk"><p class="find-item-name">防水拉链连帽休闲夹克</p>
+                                <img src="../images/find-1.jpg" class="find-item-pic" alt=""></a></li>
+                            <li class="find-bd-item find-item-6"><a href="" class="find-item-lk"><p class="find-item-name">防水拉链连帽休闲夹克</p>
+                                <img src="../images/find-1.jpg" class="find-item-pic" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="buy">
+                    <div class="buy-head box-hd">
+                        <span >会买专辑</span>
+                        <a href="">甄选优质好物<i class="box-sub"></i></a>
+                    </div>
+                    <div class="buy-bd"></div>
+                </div>
+                <div class="buy-list">
+                    <div class="buy-list-head box-hd">
+                        <span >排行榜</span>
+                        <a href="">专属你的购物指南 <i class="box-sub"></i></a>
+                    </div>
+                    <div class="buy-list-bd"></div>
                 </div>
             </div>
         </div>
@@ -647,6 +1170,68 @@
         },
         function () {
             $(this).removeClass('show-layer')
+        }
+    )
+    //悬浮在秒杀列表上
+    $('div.second-wrapper').mouseover(function () {//mouserover:鼠标处于当前元素上方，或者鼠标处于当前元素的子元素，也会触发函数
+        $('div.sk-controls').css('display','block')
+    }).mouseout(function () {
+        $('div.sk-controls').css('display','none')
+    })
+    //点击秒杀两侧按钮
+    $('a.sk-controls-item').click(function () {
+        var x = $('ul.list-wrapper').css('transform');
+        console.log("X:"+x);
+        var arr = x.split(',');
+        var n = parseInt(arr[4]);
+        if($(this).hasClass('sk-controls-prev')){
+            $('ul.list-wrapper').css({
+                transform: 'translateX('+(n+1000)+'px)'
+            })
+//            if(n+1000 == 0){
+//                $('ul.list-wrapper').css({
+//                    transform: 'translateX(-2000px)'
+//                })
+//            }
+        }
+        if($(this).hasClass('sk-controls-next')){
+            $('ul.list-wrapper').css({
+                transform: 'translateX('+(n-1000)+'px)'
+            })
+        }
+    })
+    //秒杀右侧轮播图
+    function skSpecial() {
+        $('ul.sk-special-list').children('li').each(function (i) {
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+                $('ul.sk-special-indlist').children('li').eq(i).removeClass('active');
+            }else{
+                $(this).addClass('active');
+                $('ul.sk-special-indlist').children('li').eq(i).addClass('active');
+            }
+        })
+    }
+    var skTimer = setInterval('skSpecial()',2000);//setInterval(skSpecial,2000)
+    //鼠标悬浮在秒杀指示灯上
+    $('ul.sk-special-indlist').children('li').hover(
+        function () {
+            var self = $(this)[0];
+            var itemId = 0;
+           clearInterval(skTimer);
+            $('ul.sk-special-indlist').children('li').each(function (i) {
+                if($(this)[0] == self){
+                    itemId = i;
+                }
+            });
+           $(this).addClass('active');
+           $(this).siblings('li').removeClass('active');
+
+            $('ul.sk-special-list').children('li').eq(itemId).addClass('active')
+            $('ul.sk-special-list').children('li').eq(itemId).siblings('li').removeClass('active')
+        },
+        function () {
+            skTimer = setInterval(skSpecial,2000);
         }
     )
 

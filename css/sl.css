@@ -1393,7 +1393,7 @@ body {
     height: 226px;
     width: 1190px;
     overflow: hidden;
-    padding:12px 0px;
+    padding:12px 0px 13px;
     background-color: #FFFFFF;
 }
 .second-wrapper{
@@ -1405,23 +1405,44 @@ body {
 .list-wrapper{
     float: left;
     overflow: hidden;
+
 }
 .list-wrapper-item{
     float: left;
     width: 170px;
-    height: 226px;
+    height: 225px;
     padding: 0px 14px 0px 15px;
     border-right:1px solid #AEAEAE;
 
 }
 .second-content .special{
     float: right;
-    width: 190px;
+    /*width: 190px;*/
+    padding:0 10px 0 0;
+    position: relative;
 }
-
+.sk-special-list{
+    width: 180px;
+    height: 225px;
+    position: relative;
+}
+.sk-special-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:0;
+    z-index:0;
+}
+.sk-special-item.active{
+    opacity:1;
+    z-index:1;
+}
+.sk-special-lk{
+    display: block;
+}
 .list-wrapper-pic{
     position: relative;
-    text-align: center;
+    text-align: center;/*定义a元素中的子元素的文本（包括图片）的水平对齐方式*/
 }
 .list-wrapper-img{
     width: 130px;
@@ -1439,16 +1460,16 @@ body {
 
 }
 .item-price-new img{
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
 }
 .item-price-old img{
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
 }
 .item-price-old{
     color: #AEAEAE;
-    font-size: 12px;
+    font-size: 10px;
 }
 .list-wrapper-pic-lk{
     display: block;
@@ -1482,4 +1503,194 @@ body {
     font-size: 12px;/*当前盒子的字体的大小*/
     line-height:14px;/*1，normal1：默认，合理的行间距。2，number，如果是数字，数字会与当前的字体尺寸相称来设置行间距。3，length，设置固定的行间距。4，%，基于当前的字体尺寸的百分比来设置行间距。5，inherit
                             应该从父元素继承line-height属性的值*/
+}
+.sk-item-name{
+    text-align: left;
+    /*display: block;!*定义生成框的类型。1，none:次元素不会被显示。2，block:此元素将显示为快级元素，此元素前后会带有换行符。3，inline,display的默认值，此元素显示为内联元素，此元素的前后没有换行符。*!*/
+    max-width:100%;/*当前元素的最大宽度（不包括填充padding，边框border，页边距margin）。1,none:默认值，定义对当前元素的最大宽度没有限制。2,lenght:定义当前元素的最大宽度（最大宽度不能大于父类元素的宽度，即使子元素
+                        设置的max-width的宽度大于父类的宽度，子元素的宽度等于父类元素的宽度。）。3，%，定义当前元素的最大宽度为父类元素的宽度的百分比。当前元素的宽度等于父类元素的宽度的百分比，当前元素的宽度小于或者
+                         等于父类元素的宽度。4，inherit:继承父类的宽度*/
+    height: 32px;/*当前元素的高度。*/
+    font-size: 12px;/*length:把font-size设置成固定的值*/
+    overflow: hidden;/*如果当前元素中的内容溢出当前元素（高度和宽度已经固定），1，visible:默认值，内容不会被修剪，内容会显示在当前盒子之外。2，hidden，内容会被修剪，当前盒子外的内容被隐藏。3，scroll:内容会被修剪，
+                        但是浏览器会显示滚动条以便查看其余的内容。4,auto:如果内容别修剪，则浏览器会显示滚动条以便查看其余的内容*/
+    text-align: left;/*当前盒子的文本的水平对齐方式*/
+    line-height: 16px;/*一行文本的高度，如果行的数量乘以行高大于当前盒子的高度的话，当前盒子的内容会被修剪。*/
+    -ms-word-break: break-all;/*指定非CJK脚本的断行规则。1，normal：适用浏览器默认的换行规则。2，break-all：允许在单词内换行。3，keep-all:只能在半角空格或 连字符处换行*/
+    word-break: break-all;
+    -ms-word-wrap: break-word;/*只在允许的断点字换行（断点字：在一行的末尾剩余的空白不够放一个字，如果放字的话，字的一部分处于当前盒子外面，会被修剪，所有浏览器自动进行换行。）（浏览器默认处理）*/
+    word-wrap: break-word;
+
+}
+.list-wrapper:hover{
+    display: block;
+}
+.sk-controls-item{
+    /*display: block;*/
+    position: absolute;
+    background: red;
+    width: 20px;
+    height: 50px;
+    font-size: 20px;/*文字的高度是18px*/
+    /*text-align: center;*/
+    line-height: 50px;
+    background:rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;
+}
+.sk-controls-prev{
+    top:50%;
+    left: 7px;
+}
+.sk-controls-next{
+    top:50%;
+    right:7px;
+}
+.sk-special-indlist{
+    position: absolute;
+    max-width: 180px;
+    width: 180px;
+    height: 10px;
+    left: 0px;
+    bottom: 15px;
+    /*display: block;*/
+    z-index: 2;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    text-align: center;
+
+}
+.sk-special-inditem{
+    margin:0 3px;
+    display: inline-block;
+    /*float: left;*/
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,1);
+}
+.sk-special-inditem.active{
+    background-color:#e01222
+}
+.fbt{
+    height: 444px;
+    margin-bottom: 30px;
+}
+.fbt-inner{
+    width: 1190px;
+    margin:0 auto;
+    height:444px;
+}
+.find-good{
+    float: left;
+    width: 390px;
+    height:444px;
+    margin-right: 10px;
+}
+.buy{
+    float: left;
+    width: 390px;
+    height:444px;
+    margin-right: 10px;
+}
+.buy-list{
+    float: left;
+    width: 390px;
+    height:444px;
+}
+.find-head{
+    background-color: #4998a1;
+}
+.buy-head{
+    background-color: #76488e;;
+}
+.buy-list-head{
+    background-color: #e77005;;
+}
+.find-head span{
+    
+}
+.box-hd{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 20px;
+
+}
+.box-hd span{
+    font-size: 20px;
+    color: #fff;
+}
+.box-hd a{
+    color: #fff;
+    position: relative;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.box-hd a:hover{
+    color: #fff;
+}
+.box-sub{
+    background-image: url("../images/sprite_index@1x.png");
+    width: 16px;
+    height: 16px;
+    background-repeat:no-repeat;
+    background-position: -154px -40px;
+    position: absolute;
+    top: 3px;
+    right: -18px;
+}
+.find-bd{
+    background-color: #fff;
+    padding: 10px;
+    height: 369px;
+}
+.find-bd-list{
+
+    height: 363px;
+    width: 370px;
+    overflow: hidden;
+}
+.find-bd-item{
+    position: relative;
+    float: left;
+    width: 184px;
+    height: 120px;
+    border-right:1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+.find-item-lk{
+    width: 185px;
+    height: 120px;
+    display: block;
+}
+.find-item-2, .find-item-4, .find-item-6{
+    border-right:0;
+}
+.find-item-5, .find-item-6{
+    border-bottom:0;
+}
+.find-item-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 40px;
+    margin: 20px;
+    color:#4998a1;
+    font-size: 14px;
+}
+.find-item-pic{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin:5px;
 }
