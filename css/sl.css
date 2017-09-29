@@ -1459,7 +1459,7 @@ body {
     margin-right: 10px;
 
 }
-.item-price-new img{
+.item-price-new img{/*有item-price-new类的元素，并且*/
     width: 10px;
     height: 10px;
 }
@@ -1550,18 +1550,12 @@ body {
 }
 .sk-special-indlist{
     position: absolute;
-    max-width: 180px;
-    width: 180px;
+    width: 100%;
     height: 10px;
     left: 0px;
     bottom: 15px;
-    /*display: block;*/
     z-index: 2;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
     text-align: center;
-
 }
 .sk-special-inditem{
     margin:0 3px;
@@ -1609,6 +1603,7 @@ body {
 .buy-head{
     background-color: #76488e;;
 }
+
 .buy-list-head{
     background-color: #e77005;;
 }
@@ -1648,11 +1643,104 @@ body {
 }
 .find-bd{
     background-color: #fff;
-    padding: 10px;
-    height: 369px;
+    width: 390px;
+    height: 389px;
+}
+.buy-bd{
+    width: 390px;
+    height: 389px;
+    background-color: #fff;
+    position: relative;
+}
+.buy-controls-item{
+    position: absolute;
+    top: 160px;
+    width: 20px;
+    height: 35px;
+    background-color: #e7e7e7;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    opacity:0;
+    z-index:0;
+}
+.buy-controls-item.active{
+    opacity:1;
+    z-index:1;
+}
+.buy-indlist{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: 0px;
+    bottom: 15px;
+    z-index: 2;
+    text-align: center;
+}
+
+.buy-inditem{
+    margin:0 3px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,1);
+}
+.buy-inditem.active{
+    background-color:#e01222
+}
+.sup-page.active{/*没有，空格。表示条件1成立，并且条件2成立的元素才可以使用下列样式表。*/
+    opacity:1;
+    z-index: 1;
+}
+.buy-controls-prev{
+    left: 0px;
+}
+.buy-controls-next{
+    right: 0px;
+}
+.sup-page{
+    padding-top: 8px;
+    width: 390px;
+    height: 380px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: 0;
+}
+.sup-des{
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666;    
+    text-indent: 15px;
+}
+.sup-lk{
+    display: block;
+    width: 360px;
+    height: 141px;
+    padding-top: 18px;
+    margin: 0 15px 18px;
+    overflow: hidden;
+   white-space: nowrap;/*指定元素内部的空白怎么处理1：*/
+}
+.sup-spe{
+    height:1px ;
+    width: 330px;
+    background-color: #AEAEAE;
+    margin:0 auto;
+}
+.sup-img{
+    margin: 0 5px;
+    display: inline-block;
+    width: 110px;
+
+    line-height: 110px;
 }
 .find-bd-list{
-
     height: 363px;
     width: 370px;
     overflow: hidden;
@@ -1694,3 +1782,179 @@ body {
     right: 0;
     margin:5px;
 }
+/*排行榜的头*/
+.buy-list-bd{
+    padding:0px 9px 10px;
+    background-color: #fff;
+}
+.tab-head{
+    width: 372px;
+    height: 30px;
+    position: relative;
+    /*white-space:nowrap;*/
+    /*word-wrap:break-word;*/
+    border-bottom:1px solid #AEAEAE;
+
+}
+.tab-list{
+    display: block;
+}
+.tab-item{
+    float: left;
+    /*width:;*/
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+}
+.tab-item-5{
+    border-right: 0px;
+}
+.tab-space{
+    width: 1px;
+    height: 16px;
+    float: left;
+    background-color: #AEAEAE;
+    margin: 7px 11px 0px;
+}
+.tab-trans{
+    position: absolute;
+    width: 56px;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: red;
+    margin-bottom: -1px;
+    transition: transform .3s;
+}
+/*排行榜的身体*/
+.tab-body{
+    padding-top:10px;
+}
+.tab-body-list{
+    width: 372px;
+    height: 338px;
+    display: none;
+}
+.tab-body-list.active{
+    display: block;
+}
+.tab-body-item{
+    float: left;
+    border-right:1px solid #AEAEAE;
+    border-bottom: 1px solid #AEAEAE;
+    width: 123px;
+    height: 168px;
+}
+.tab-body-item-3{
+    border-right: 0px;
+}
+.tab-body-item-5, .tab-body-item-4{
+    border-bottom: 0px;
+}
+.tab-body-item-6{
+    border-right: 0px;
+    border-bottom: 0px;
+}
+.tab-body-lk{
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.tab-body-img{
+    width: 100px;
+    height: 100px;
+    margin:10px 0;
+}
+.tab-body-txt{
+    width: 100px;
+    margin-left: 11px;
+    font-size: 12px;
+    line-height: 17px;
+    height: 34px;
+    color: #666;
+    overflow: hidden;
+}
+.tab-body-rank{
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    width: 30px;
+    height: 40px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/sprite_index@1x.png");
+}
+.tab-rank-item-1{
+    background-position: -104px -40px;
+}
+.tab-rank-item-2{
+    background-position: -50px -100px;
+}
+.tab-rank-item-3{
+    background-position: 0px -100px;
+}
+.tab-rank-item-4, .tab-rank-item-5, .tab-rank-item-6{
+    background-position: -100px -100px;
+}
+/*享受品质*/
+.need-ani{
+    width:100%;
+    height: 100px;
+    background-color: #e0e0e0;
+    margin-bottom: 30px;
+}
+.need-inner{
+    width: 1190px;
+    margin: 0px auto;
+}
+.qua-item{
+    float: left;
+}
+/*竖行导航栏*/
+.vertical-navi{
+    width: 30px;
+    background-color: #918888;
+    position: fixed;
+    top:30px;
+    left:50px;
+}
+.navi-item{
+    border-bottom:1px solid #b1aaaa;
+}
+.nava-lk{
+    color: #FFFFFF;
+    /*padding: 2px;*/
+    font-size: 12px;
+    height: 30px;
+    line-height: 15px;
+    width: 30px;
+    text-align: center;
+}
+/**/
+.qua{
+    height:585px;
+}
+/*享受品质的标题*/
+.qua-title{
+    height: 35px;
+    padding-bottom: 20px;
+}
+.qua-title-center{
+    width: 1190px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+/*享受品质的内容*/
+.qua-content{
+
+}
+.qua-content-center{
+    width: 1190px;
+    margin:0 auto;
+    height: 530px;
+}
+
