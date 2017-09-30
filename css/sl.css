@@ -1936,6 +1936,7 @@ body {
 /**/
 .qua{
     height:585px;
+    margin-bottom: 20px;
 }
 /*享受品质的标题*/
 .qua-title{
@@ -1957,4 +1958,130 @@ body {
     margin:0 auto;
     height: 530px;
 }
+.qua-entry{
+
+}
+.qua-content-list{
+
+}
+.qua-content-item{
+    float: left;
+    width: 390px;
+    height: 170px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.qua-content-audio{
+    float: right;
+    height: 350px;
+    margin-right: 0px;
+}
+.qua-content-item-1, .qua-content-item-2, .qua-content-item-3, .qua-content-item-4{
+    margin-bottom: 0;
+}
+.qua-content-item-3{
+    width: 190px;
+}
+.qua-content-item-4{
+    width: 190px;
+    margin-right: 0;
+}
+.qua-content-img{
+    width: 390px;
+    height: 170px;
+}
+.qua-content-lk{
+    display: block;
+    position: relative;
+}
+.qua-content-img-1, .qua-content-img-2{
+    width: 190px;
+    height: 170px;
+}
+.qua-content-des{
+    width:36%;
+    height: 170px;
+    color: #fff;
+    position: absolute;
+    background-color: #66B687;
+}
+.qua-content-info{
+    padding-top: 45px;
+    margin: 0 auto;
+    font-size: 14px;
+    width: 100px;
+}
+.qua-content-info-title{
+    border-top: 2px solid #FFFFFF;
+    border-bottom:2px solid #FFFFFF;
+    font-size: 22px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-family: fzzhengheis-el-gbregular;
+}
+.qua-content-info-outline{
+    overflow: hidden;
+    margin-top:8px;
+    height: 32px;
+    line-height: 16px;
+}
+.qua-content-des-small{
+    width:100%;
+    height: 80px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #66B687;
+}
+.qua-content-small-info{
+    width: 120px;
+    margin: 0 auto;
+    padding-top:10px;
+}
+.qua-content-small-info-title{
+    border-top: 2px solid #FFFFFF;
+    border-bottom:2px solid #FFFFFF;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;/*一行文字所处于的高度（包括padding和内容，不包括border边界）*/
+    text-align: center;
+    font-weight: 400;
+    font-family: fzzhengheis-el-gbregular;
+    overflow: hidden;
+}
+.qua-content-small-info-outline{
+    overflow: hidden;
+    margin-top:8px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+/*享受品质直播*/
+.live-entry{
+    position: relative;
+    width: 390px;
+    height: 350px;
+}
+.live-list{
+    width:100%;
+    height: 100%;
+}
+
+.live-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.live-item.active{
+    opacity: 1;
+}
+
 
