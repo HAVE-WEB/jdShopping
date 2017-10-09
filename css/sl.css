@@ -2016,7 +2016,7 @@ body {
     margin-bottom: -1px;
     transition: transform .3s;
 }
-/*排行榜的身体*/
+/*start 排行榜的身体*/
 .tab-body{
     padding-top:10px;
 }
@@ -2088,6 +2088,7 @@ body {
 .tab-rank-item-4, .tab-rank-item-5, .tab-rank-item-6{
     background-position: -100px -100px;
 }
+/*end 排行榜的身体*/
 /*享受品质*/
 .need-ani{
     width:100%;
@@ -2127,7 +2128,7 @@ body {
     height:585px;
     margin-bottom: 20px;
 }
-/*享受品质的标题*/
+/*start 享受品质的标题*/
 .qua-title{
     height: 35px;
     padding-bottom: 20px;
@@ -2138,6 +2139,7 @@ body {
     text-align: center;
     font-size: 20px;
 }
+/*end  享受品质的标题*/
 /*享受品质的内容*/
 .qua-content{
 
