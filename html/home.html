@@ -327,17 +327,36 @@
                                         <div class="service_pop_item" style="display: none;"></div>
                                         <div class="service_pop_item" style="display: none;">
                                             <div id="squares-jipiao">
-                                                <ul class="squares-taba clearfix">
-                                                    <li class="jp-tab current"><a href="">国内机票</a></li>
+                                                <ul class="squares-tab clearfix">
+                                                    <li class="jp-tab active"><a href="">国内机票</a></li>
                                                     <li class="jp-tab"><a href="">国际/港澳台</a></li>
-                                                    <li class="jp-tab last"><a href="">特惠活动</a></li>
+                                                    <li class="jp-tab"><a href="">特惠活动</a></li>
                                                 </ul>
                                                 <div class="squares-main">
                                                     <div class="squares-content">
                                                         <ul class="tab-content clearfix">
-                                                            <li class="jp-content"></li>
-                                                            <li class="jp-content"></li>
-                                                            <li class="jp-content"></li>
+                                                            <li class="jp-content">
+                                                                <div class="select-type">
+                                                                    <label><input type="radio" checked name="flighttype"><span for="">单程</span></label>
+                                                                    <label><input type="radio" name="flighttype"><span for="">往返</span></label>
+                                                                </div>
+                                                                <div class="select-city">
+                                                                    <div class="city-area"><input type="text" class="start-city" placeholder="城市"><span class="area-title">出发</span></div>
+                                                                    <span class="change-city"></span>
+                                                                    <div class="city-area"><input type="text" class="end-city" placeholder="城市"> <span class="area-title">到达</span></div>
+                                                                </div>
+                                                                <div class="select-date">
+                                                                    <div class="date-area"><input  type="text" class="start-date" readonly placeholder="出发"> <span class="date-title">日期</span><input type="text" class="end-date" readonly placeholder="返程"></div>
+                                                                </div>
+                                                                <div class="search-jp">
+                                                                    <a href="" class="search-jp-btn">机票查询</a>
+                                                                    <span class="search-jp-txt">
+                                                                        <a href="">当季热门特惠机票</a>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="jp-content"><div></div></li>
+                                                            <li class="jp-content"><div></div></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -345,14 +364,13 @@
                                         </div>
                                         <div class="service_pop_item" style="display: none;"></div>
                                         <div class="service_pop_item" style="display: none;"></div>
-                                        <a href="" class="service_pop_close"><i class="fa fa-times"></i></a>
+                                        <a href="javascript:;" class="service_pop_close"><i class="fa fa-times"></i></a>
                                     </div>
                                 </div>
                             </div>
                     </div>
                 </div>
             </div>
-
         </div>
         <!--秒杀-->
         <div class="second-kil-layer">
@@ -1066,23 +1084,6 @@
                 </div>
             </div>
         </div>
-        <!--悬浮的竖行导航栏-->
-        <!--<div class="vertical-navi">-->
-            <!--<ul class="navi-list">-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-                <!--<li class="navi-item"><a href="" class="nava-lk"><span>享受品质</span></a></li>-->
-            <!--</ul>  -->
-        <!--</div>-->
         <!--享受品质的图片-->
         <div class="need-ani">
             <div class="need-inner">
@@ -1144,8 +1145,213 @@
             </div>
         </div>
 
+        <!--城市选择层-->
+        <div class="squares-jipiao-layer" style="display: none;z-index: 9999;top: 530px;left: 1290px;">
+            <div class="mt">
+                <div class="mt-txt">支持中文/拼音/简拼输入</div>
+            </div>
+            <ul class="tab">
+                <li class="curr"><a href="javascript:;">热门</a></li>
+                <li><a href="javascript:;">ABCDE</a></li>
+                <li><a href="javascript:;">FGHJ</a></li>
+                <li><a href="javascript:;">KLMN</a></li>
+                <li><a href="javascript:;">PQSTW</a></li>
+                <li><a href="javascript:;">XYZ</a></li>
+            </ul>
+            <div class="mc">
+                <div class="hide" style="display: block;">
+                    <div class="fn">
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">上海</a>
+                    </div>
+                </div>
+                <div class="hide" style="display: none;">
+                    <div class="fl">A</div>
+                    <div class="fn">
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="fl">B</div>
+                    <div class="fn">
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                    </div>
+                    <div class="clr"></div>
 
+                </div>
+                <div class="hide" style="display: none;">
+                    <div class="fl">A</div>
+                    <div class="fn">
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                        <a href="javascript:;">上海1</a>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="fl">B</div>
+                    <div class="fn">
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                    </div>
+                    <div class="clr"></div>
 
+                </div>
+                <div class="hide" style="display: none;">
+                    <div class="fl">F</div>
+                    <div class="fn">
+                        <a href="javascript:;">上海F</a>
+                        <a href="javascript:;">上海F</a>
+                        <a href="javascript:;">上海F</a>
+                        <a href="javascript:;">上海F</a>
+                        <a href="javascript:;">上海F</a>
+                        <a href="javascript:;">上海F</a>
+                        <a href="javascript:;">上海F</a>
+                        <a href="javascript:;">上海F</a>
+                        <a href="javascript:;">上海F</a>
+                        <a href="javascript:;">上海F</a>
+                        <a href="javascript:;">上海F</a>
+                        <a href="javascript:;">上海F</a>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="fl">B</div>
+                    <div class="fn">
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                    </div>
+                    <div class="clr"></div>
+
+                </div>
+                <div class="hide" style="display: none;">
+                    <div class="fl">Q</div>
+                    <div class="fn">
+                        <a href="javascript:;">上海Q</a>
+                        <a href="javascript:;">上海Q</a>
+                        <a href="javascript:;">上海Q</a>
+                        <a href="javascript:;">上海Q</a>
+                        <a href="javascript:;">上海Q</a>
+                        <a href="javascript:;">上海Q</a>
+                        <a href="javascript:;">上海Q</a>
+                        <a href="javascript:;">上海Q</a>
+                        <a href="javascript:;">上海Q</a>
+                        <a href="javascript:;">上海Q</a>
+                        <a href="javascript:;">上海Q</a>
+                        <a href="javascript:;">上海Q</a>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="fl">B</div>
+                    <div class="fn">
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                    </div>
+                    <div class="clr"></div>
+
+                </div>
+                <div class="hide" style="display: none;">
+                    <div class="fl">X</div>
+                    <div class="fn">
+                        <a href="javascript:;">上海X</a>
+                        <a href="javascript:;">上海X</a>
+                        <a href="javascript:;">上海X</a>
+                        <a href="javascript:;">上海X</a>
+                        <a href="javascript:;">上海X</a>
+                        <a href="javascript:;">上海X</a>
+                        <a href="javascript:;">上海X</a>
+                        <a href="javascript:;">上海X</a>
+                        <a href="javascript:;">上海X</a>
+                        <a href="javascript:;">上海X</a>
+                        <a href="javascript:;">上海X</a>
+                        <a href="javascript:;">上海X</a>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="fl">B</div>
+                    <div class="fn">
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                        <a href="javascript:;">上海B</a>
+                    </div>
+                    <div class="clr"></div>
+
+                </div>
+            </div>
+        </div>
 
     </body>
 </html>
@@ -1334,7 +1540,7 @@
         },
         function () {//鼠标移出元素要触发的函数
         }
-    )
+    );
     //鼠标悬浮在服务列表最上面4个的时候
     $('ul.service_list').children('li').hover(
         function () {
@@ -1352,7 +1558,78 @@
         function () {
 //            $('div.service').removeClass('service_expend');
         }
-    )
+    );
+    //机票tab
+    $('li.jp-tab').hover(
+
+        function () {
+//            alert('aaaa');
+            $(this).addClass('active');
+            $(this).siblings('li').removeClass('active');
+        }
+    );
+    //切换地点
+    $('span.change-city').click(function () {
+       var prev = $(this).prev().find('input').val();
+       var next = $(this).next().find('input').val();
+       var temp = prev;
+        $(this).prev().find('input').val(next);
+        $(this).next().find('input').val(temp);
+    });
+    //鼠标点击城市字幕头
+    $('.squares-jipiao-layer li').click(function () {
+        var self = $(this)[0];
+        $(this).addClass('curr');
+        $(this).siblings('li').removeClass('curr');
+        var index = 0;
+        $('.squares-jipiao-layer li').each(function (i) {
+            if(self == $(this)[0]){
+                index = i;
+            }
+        });
+        $('.squares-jipiao-layer').find('.hide').each(function (j) {
+            if(index == j){
+                $(this).css('display','block');
+            }else{
+                $(this).css('display','none');
+            }
+        })
+    });
+    //鼠标点击出发城市，显示城市选择层
+    var $active_input ;
+    $('.start-city,.end-city').click(function () {
+        var t = $(this).offset().top;
+        var l =  $('.service').offset().left;
+        var w  =  $('.service').outerWidth();
+        var h = $(this).outerHeight();
+        $('.service').offset().left;
+        var s_w = $('.squares-jipiao-layer').outerWidth();
+        $('.squares-jipiao-layer').css({
+            display: 'block',
+            top: t + h,
+            left: l + w -s_w
+        });
+        $active_input = $(this);
+    });
+
+    //鼠标悬浮在城市层上
+    $('.squares-jipiao-layer').hover(
+        function () {
+            $(this).css('display','block');
+        },
+        function () {
+            $(this).css('display', 'none');
+        }
+    );
+    //点击城市名，将赋值到文本域中
+    $('.squares-jipiao-layer .mc').find('a').click(function () {
+        var c = $(this).html();
+        $active_input.val(c);
+    });
+    //点击删除按钮
+    $('.service_pop_close').click(function () {
+       $('.service').removeClass('service_expend');
+    });
     //悬浮在我的京东上
     $('.my-jd').hover(
         function () {

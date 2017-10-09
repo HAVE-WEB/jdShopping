@@ -20,6 +20,12 @@
         padding: 20px;
 
     }
+    a:before{
+        content: '('attr(href)')';
+    }
+    a:after{
+        content: 'attr(href)';
+    }
 </style>
 <body>
 <div style="background-color: red;width: 500px;height: 500px; padding: 50px;">
@@ -41,6 +47,7 @@
     <div class="second-head">
         <span style="display: block;">aaaaaaaa</span>
         <span>bbbbbbbbbbbbbbbb</span>
+        <a href="www.baidu.com"></a>
     </div>
 </div>
 
