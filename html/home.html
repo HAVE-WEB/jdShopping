@@ -3,7 +3,6 @@
     <title>京东首页</title>
     <link href="../css/sl.css" rel="stylesheet">
     <link href="../css/font-awesome.css" rel="stylesheet">
-    <script src="../js/jquery.min.js"></script>
     <style>
         a{/*定义a标签里子元素文本的颜色是#999999,如果子元素文本定义了自己的颜色，子元素的颜色就是自己class中的颜色，子元素没有定义，就继承父类的颜色值*/
             text-decoration: none;
@@ -1540,6 +1539,8 @@
 
     </body>
 </html>
+<!--先加载静态页面，在加载类库-->
+<script src="../js/jquery.min.js"></script>
 <script>
     var timer;
     var arrLi = $('ul.slider_list').children('li');
