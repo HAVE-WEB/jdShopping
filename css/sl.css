@@ -1207,14 +1207,15 @@ body {
 /*机票的内容*/
 .jp-content{
     float: left;
-    height: 133px;
-    width: 174px;
-    padding:8px;
-    
+    height: 146px;
+    width: 190px;
+    /*border:1px solid blue;*/
 }
 .tab-content{
     width: 570px;
     height: 149px;
+    transition: all .5s;
+    /*border: 1px solid red;*/
 }
 .jp-content .select-type label{
     height: 15px;
@@ -1229,11 +1230,13 @@ body {
 }
 .select-type{
     margin-bottom: 5px;
+    margin-left: 10px;
 }
 
 /*出发到达城市*/
 .select-city, .select-date{
     position: relative;
+    margin-left: 10px;
 }
 .city-area, .date-area{
     float: left;
@@ -1255,6 +1258,7 @@ body {
 }
 .search-jp{
     height: 26px;
+    margin-left: 10px;
 }
 .search-jp-btn{
     float: left;
@@ -2274,5 +2278,195 @@ body {
 .live-item.active{
     opacity: 1;
 }
+/*start 机票服务*/
+#squares-jipiao .squares-main .jp-content .jp-activity{
+    display: block;
+    float: left;
+    margin: 14px 0 0 10px;
+}
+#squares-jipiao .squares-main .jp-content .jp-img{
+    width: 79px;
+    height: 117px;
+}
+/*start left*/
+.life{
+    width:100%;
+    margin-bottom: 30px;
+}
+.life .l_center{
+    width: 1190px;
+    height: 523px;
+    margin: 0 auto;
+    /*border: 1px solid #cc0000;*/
+}
+.life .l_center .l_ul{
+    /*border:1px solid green;*/
+}
+.life .l_center .l_ul .l_list{
+    float: left;
+    width: 590px;
+    height: 523px;
+    /*border:1px solid #440106;*/
+
+}
+.life .l_center .l_ul .l_list .l_type{
+    height: 58px;
+    width: 590px;
+    background-color: #974676;
+}
+.life .l_center .l_ul .l_list .l_type .l_left{
+    float: left;
+    margin-left: 30px;
+}
+.life .l_center .l_ul .l_list .l_type .l_left span{
+    font-size: 20px;
+    height: 58px;
+    line-height: 58px;
+    color: #fff;
+}
+.life .l_center .l_ul .l_list .l_type .l_left div{
+    width: 20px;
+    height: 20px;
+    background: url("../images/code.png") no-repeat ;
+    margin-top: 20px;
+}
+.life .l_center .l_ul .l_list .l_type .l_right{
+    margin: 16px 0px 0px 14px;
+    float: right;
+    border:1px solid #fff;
+}
+.life .l_center .l_ul .l_list .l_type .l_right a{
+    color: #fff;
+    padding:0 10px;
+    height: 24px;
+    line-height: 24px;
+}
+.life .l_center .l_ul .l_list .l_type .l_right.i_2{
+    margin-right: 32px;
+}
+.life .l_center .l_ul .l_list .l_des{
+    background: #fff;
+    padding: 10px;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail{
+    float: left;
+    background-color: #FFF;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_1{
+    margin:0 10px 10px 0;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_2{
+    margin:0 0 10px 0;
+    width: 355px;
+    height:260px;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_2 a{
+    position: relative;
+    width: 157px;
+    height: 110px;
+    float: left;
+    padding-top:20px;
+    padding-left: 20px;
+    border-left:1px solid #CCC;
+    border-bottom:1px solid #ccc;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_2 .a_1{
+    border-left: 0px;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_2 .a_3{
+    border-left: 0px;
+    border-bottom: 0px;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_2 .a_4{
+    border-bottom: 0px;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_2 p{
+    position: absolute;
+    left: 20px;
+    z-index:1;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_2 .l_p_1{
+     font-size: 14px;
+     color: #974676;
+    top: 20px;
+ }
+.life .l_center .l_ul .l_list .l_des .l_detail.i_2 .l_p_2{
+    font-size: 12px;
+    color: #666;
+    top: 40px;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_2 img{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_3 a{
+    display: block;
+    /*border:1px solid red;*/
+    width: 183px;
+    height:130px;
+    float: left;
+    overflow: hidden;
+    margin-right:10px;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_3 .three{
+    margin-right:0px;
+}
+.life .l_center .l_ul .l_list .l_des .l_detail.i_3 img{
+    width: 193px;
+    height:130px;
+}
+.life .l_center .l_ul .l_list .l_des .l_trademark{
+    margin-top: 10px;
+    position: relative;
+}
+.life .l_center .l_ul .l_list .l_des .l_trademark .l_info{
+    height: 35px;
+    width:569px;
+    overflow: hidden;
+
+}
+.life .l_center .l_ul .l_list .l_des .l_trademark .l_info .l_ul{
+    width:1120px;
+}
+.life .l_center .l_ul .l_list .l_des .l_trademark .l_info .l_ul li{
+    float: left;
+    /*border:1px solid green;*/
+    height: 20px;
+    border-right:1px solid #ccc;
+    margin-top:7px;
+    padding:0px 12px;
+}
+.life .l_center .l_ul .l_list .l_des .l_trademark .l_info .l_ul a{
+    display: block;
+}
+.life .l_center .l_ul .l_list .l_des .l_trademark .l_info .l_ul img{
+    width: 70px;
+    height: 35px;
+    margin-top: -7px;
+}
+.life .l_center .l_ul .l_list .l_des .l_trademark .l_info .l_btn{
+    position: absolute;
+    font-size: 16px;
+    top: 10px;
+    color: #666;
+    display: none;
+}
+.life .l_center .l_ul .l_list .l_des .l_trademark .l_info .l_btn.b_1{
+    left: -5px;
+}
+.life .l_center .l_ul .l_list .l_des .l_trademark .l_info .l_btn.b_2{
+    right: -5px;
+}
+.life .l_center .l_ul .i_1{
+    margin-right:10px;
+}
+.life .l_center .l_ul .l_clr{
+    clear: both;
+}
 
 
+/*end left*/
+.clearFloat:after{
+    clear: both;
+}
